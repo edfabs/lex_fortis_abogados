@@ -1,0 +1,10 @@
+{% extends "skeleton/base.html" %}
+
+{% block title %}Lex Fortis Abogados sssss{% endblock %}
+
+{% block content %}
+{% for entry in blog_entries %}
+    <h2> Lex Fortis Abogados{{ entry.title }}</h2>
+    <p>Text lex fortis abogados{{ entry.body }}</p>
+{% endfor %}
+{% endblock %}

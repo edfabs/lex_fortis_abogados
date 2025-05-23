@@ -1,0 +1,1337 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{% block title%} {% endblock %}</title>
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'plugins/revolution/css/settings.css' %}" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
+<link href="{% static 'plugins/revolution/css/layers.css' %}" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
+<link href="{% static 'plugins/revolution/css/navigation.css' %}" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<!--Color Themes-->
+<link id="theme-color-file" href="css/color-themes/default-theme.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header-->
+    <header class="main-header">
+    
+    	<!--Header Top-->
+    	<div class="header-top">
+            <div class="auto-container">
+                <div class="clearfix">
+                    <!--Top Left-->
+                    <div class="top-left pull-left">
+                    	<ul class="clearfix">
+                        	<li>Vocación por defender,<span class="theme_color"> tu problema se vuelve nuestro problema.</li>
+                        </ul>
+                    </div>
+                    <!--Top Right-->
+                    <div class="top-right pull-right">
+                    	<ul class="social-nav">
+                        	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                            
+                            <!-- <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                            <li><a href="#"><span class="fa fa-dribbble"></span></a></li> -->
+                        </ul>
+                        <!--Language-->
+                        <!-- <div class="language dropdown"><a class="btn btn-default dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#"><span class="flag-icon"><img src="images/icons/flag-icon.jpg" alt=""/></span>English &nbsp;<span class="icon fa fa-angle-down"></span></a>
+                        	<ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu2">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">German</a></li>
+                                <li><a href="#">Arabic</a></li>
+                                <li><a href="#">Hindi</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    	<!--Header-Upper-->
+        <div class="header-upper">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                	
+                	<div class="pull-left logo-box">
+                    	<!-- <div class="logo"><a href="index.html"><img class="" width="200" src="{% static 'images/lex-fortis-abogados-logo.png' %}" alt="Lex Fortis Abogados Logo" title="Lex Fortis Abogados Logo"></a></div> -->
+                        <!--Info Box-->
+                        <div class="upper-column info-box">
+                            <a href="index.html"><img class="" width="200" src="{% static 'images/lex-fortis-abogados-logo.png' %}" alt="Lex Fortis Abogados Logo" title="Lex Fortis Abogados Logo"></a>
+                        </div>
+                        <!--Info Box-->
+                        <div class="upper-column info-box">
+                            <div class="icon-box"><span class="flaticon-envelope-1"></span></div>
+                            <ul>
+                                <li><strong>jfgonzalez@lex-fortis-abogados.com</strong></li>
+                                <li>Office Hours: 09.00am - 17.00pm</li>
+                            </ul>
+                        </div>
+                        
+                        <!--Info Box-->
+                        <div class="upper-column info-box">
+                            <div class="icon-box"><span class="flaticon-home-1"></span></div>
+                            <ul>
+                                <li><strong>+92 354 5386 24</strong></li>
+                                <li>5648 VK 26th Lane - Florida 26154.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="pull-right upper-right clearfix">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        
+        <!--Header Lower-->
+        <div class="header-lower">
+            
+        	<div class="auto-container">
+            	<div class="nav-outer clearfix">
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->    	
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <div class="pull-left logo-box">
+                                    <div class="logo">
+                                        <a href="index.html">
+                                            
+                                        </a>
+                                    </div>
+                                </div>
+                                <li class="current dropdown"><a href="#">Home</a>
+                                    <ul>
+                                        <li><a href="index.html">Homepage One</a></li>
+                                        <li><a href="index-2.html">Homepage Two</a></li>
+                                        <li class="dropdown"><a href="#">Header Styles</a>
+                                            <ul>
+                                                <li><a href="index.html">Header Style One</a></li>
+                                                <li><a href="index-2.html">Header Style Two</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">About us</a>
+                                    <ul>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                        <li><a href="testimonial.html">Testimonial</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Practice Areas</a>
+                                    <ul>
+                                        <li><a href="practice.html">All Practices</a></li>
+                                        <li><a href="practice-single.html">Family Law</a></li>
+                                        <li><a href="practice-single.html">Business Law</a></li>
+                                        <li><a href="practice-single.html">Criminal Law</a></li>
+                                        <li><a href="practice-single.html">Insurance Law</a></li>
+                                        <li><a href="practice-single.html">Drug Control Law</a></li>
+                                        <li><a href="practice-single.html">Consumer Law</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Attorneys</a>
+                                    <ul>
+                                        <li><a href="attorneys.html">Attorneys</a></li>
+                                        <li><a href="attorneys-single.html">Attorneys Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Gallery</a>
+                                    <ul>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="gallery-single.html">Gallery Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Blog</a>
+                                    <ul>
+                                        <li><a href="blog-grid.html">Blog Grid Layout</a></li>
+										<li><a href="blog.html">Blog with Sidebar</a></li>
+										<li><a href="blog-single.html">Blog Single Post</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+                    <div class="outer-box clearfix">
+                    	
+                        <!--Search Box-->
+                        <div class="search-box-outer">
+                            <div class="dropdown">
+                                <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                                <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                    <li class="panel-outer">
+                                        <div class="form-container">
+                                            <form method="post" action="blog.html">
+                                                <div class="form-group">
+                                                    <input type="search" name="field-name" value="" placeholder="Search Here" required>
+                                                    <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="advisor-box">
+                        	<a href="#" class="theme-btn advisor-btn">Free Consultation</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Lower-->
+        
+        <!--Sticky Header-->
+        <div class="sticky-header">
+        	<div class="auto-container clearfix">
+            	<!--Logo-->
+            	<div class="logo pull-left">
+                	<a href="index.html" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
+                </div>
+                
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                	<!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->    	
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="current dropdown"><a href="#">Home</a>
+                                    <ul>
+                                        <li><a href="index.html">Homepage One</a></li>
+                                        <li><a href="index-2.html">Homepage Two</a></li>
+                                        <li class="dropdown"><a href="#">Header Styles</a>
+                                            <ul>
+                                                <li><a href="index.html">Header Style One</a></li>
+                                                <li><a href="index-2.html">Header Style Two</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">About us</a>
+                                    <ul>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                        <li><a href="testimonial.html">Testimonial</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Practice Areas</a>
+                                    <ul>
+                                        <li><a href="practice.html">All Practices</a></li>
+                                        <li><a href="practice-single.html">Family Law</a></li>
+                                        <li><a href="practice-single.html">Business Law</a></li>
+                                        <li><a href="practice-single.html">Criminal Law</a></li>
+                                        <li><a href="practice-single.html">Insurance Law</a></li>
+                                        <li><a href="practice-single.html">Drug Control Law</a></li>
+                                        <li><a href="practice-single.html">Consumer Law</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Attorneys</a>
+                                    <ul>
+                                        <li><a href="attorneys.html">Attorneys</a></li>
+                                        <li><a href="attorneys-single.html">Attorneys Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Gallery</a>
+                                    <ul>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="gallery-single.html">Gallery Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Blog</a>
+                                    <ul>
+                                        <li><a href="blog-grid.html">Blog Grid Layout</a></li>
+										<li><a href="blog.html">Blog with Sidebar</a></li>
+										<li><a href="blog-single.html">Blog Single Post</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+                </div>
+                
+            </div>
+        </div>
+        <!--End Sticky Header-->
+    
+    </header>
+    <!--End Main Header -->
+
+    <!--Main Slider-->
+    <section class="main-slider">
+    	
+        <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">
+            <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
+                <ul>
+                
+                	<li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{% static 'images/main-slider/image-1.jpg' %}" data-title="Slide Title" data-transition="parallaxvertical">
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/main-slider/image-1.jpg' %}"> 
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['720','720','650','450']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['-180','-180','-130','-135']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<div class="title">welcome to supreme law</div>
+                    </div>
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['720','720','650','450']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['-70','-70','-50','-70']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<h2>Attrorneys Fighting For Your Freedom</h2>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-width="['720','720','650','450']"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['60','60','40','15']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<div class="text">“We Have Helped Thousands of People to Get Relief From National Wide Fights WrongfullDenials. Now They Trusted Our Attorneys.”</div>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['720','720','650','450']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['160','160','125','105']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<a href="about.html" class="theme-btn btn-style-one">Contact Our Attorneys</a>
+                    </div>
+                    
+                    </li>
+                    
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{% static 'images/main-slider/image-1-2.jpg' %}" data-title="Slide Title" data-transition="parallaxvertical">
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/main-slider/image-1-2.jpg' %}">
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['720','720','650','450']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['-180','-180','-130','-135']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<div class="title">welcome to supreme law</div>
+                    </div>
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['720','720','650','450']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['-70','-70','-50','-70']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<h2>Attrorneys Fighting For Your Freedom</h2>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-width="['720','720','650','450']"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['60','60','40','15']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<div class="text">“We Have Helped Thousands of People to Get Relief From National Wide Fights WrongfullDenials. Now They Trusted Our Attorneys.”</div>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['720','720','650','450']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['160','160','125','105']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<a href="about.html" class="theme-btn btn-style-one">Contact Our Attorneys</a>
+                    </div>
+                    
+                    </li>
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{% static 'images/main-slider/image-1-3.jpg' %}" data-title="Slide Title" data-transition="parallaxvertical">
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/main-slider/image-1-3.jpg' %}">
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['720','720','650','450']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['-180','-180','-130','-135']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<div class="title">welcome to supreme law</div>
+                    </div>
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['720','720','650','450']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['-70','-70','-50','-70']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<h2>Attrorneys Fighting For Your Freedom</h2>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-whitespace="normal"
+                    data-width="['720','720','650','450']"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['60','60','40','15']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<div class="text">“We Have Helped Thousands of People to Get Relief From National Wide Fights WrongfullDenials. Now They Trusted Our Attorneys.”</div>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['720','720','650','450']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['160','160','125','105']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<a href="about.html" class="theme-btn btn-style-one">Contact Our Attorneys</a>
+                    </div>
+                    
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Main Slider-->
+    <div id="content">
+         {% block content %}{% endblock %}
+   </div>
+
+    <!--Services Section-->
+    <section class="services-section">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Services Block-->
+                <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="icon-box">
+                        	<span class="icon flaticon-family"></span>
+                        </div>
+                        <h3><a href="practice-single.html">Family Law</a></h3>
+                        <div class="text">Family law (also we called matrimonial law) is an area of the law sed that deals with family matters & family domestic relations and ect…</div>
+                        <a href="practice-single.html" class="read-more">Read More <span class="fa fa-angle-double-right"></span></a>
+                    </div>
+                </div>
+                
+                <!--Services Block-->
+                <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="icon-box">
+                        	<span class="icon flaticon-balance"></span>
+                        </div>
+                        <h3><a href="practice-single.html">Business Law</a></h3>
+                        <div class="text">Family law (also we called matrimonial law) is an area of the law sed that deals with family matters & family domestic relations and ect…</div>
+                        <a href="practice-single.html" class="read-more">Read More <span class="fa fa-angle-double-right"></span></a>
+                    </div>
+                </div>
+                
+                <!--Services Block-->
+                <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="icon-box">
+                        	<span class="icon flaticon-drug"></span>
+                        </div>
+                        <h3><a href="practice-single.html">Drug Control Law</a></h3>
+                        <div class="text">Family law (also we called matrimonial law) is an area of the law sed that deals with family matters & family domestic relations and ect…</div>
+                        <a href="practice-single.html" class="read-more">Read More <span class="fa fa-angle-double-right"></span></a>
+                    </div>
+                </div>
+                
+                <!--Services Block-->
+                <div class="services-block col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                    	<div class="icon-box">
+                        	<span class="icon flaticon-jail"></span>
+                        </div>
+                        <h3><a href="practice-single.html">Criminal Law</a></h3>
+                        <div class="text">Family law (also we called matrimonial law) is an area of the law sed that deals with family matters & family domestic relations and ect…</div>
+                        <a href="practice-single.html" class="read-more">Read More <span class="fa fa-angle-double-right"></span></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Services Section-->
+    
+    <!--History Section-->
+    <section class="history-section" style="background-image:url(images/background/1.jpg)">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Content Column-->
+                <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<div class="sec-title">
+                        	<h2>Our <span class="theme_color">History’s</span></h2>
+                        </div>
+                        
+                        <!--History Block-->
+                        <div class="history-block">
+                        	<div class="inner-block">
+                            	<h3>1995 – Opening</h3>
+                                <div class="text">Move the needle communities living a fully ethical life change makers movements move the needle black lives matter social intrapreneurship citizen centered overcome</div>
+                            </div>
+                        </div>
+                        
+                        <!--History Block-->
+                        <div class="history-block">
+                        	<div class="inner-block">
+                            	<h3>2015 – 15000K Client’s</h3>
+                                <div class="text">Capacity building program area emerging change-makers peaceful compelling strategize venture philanthropy</div>
+                            </div>
+                        </div>
+                        
+                        <!--History Block-->
+                        <div class="history-block">
+                        	<div class="inner-block">
+                            	<h3>2018 – Best Law & Firm Awards</h3>
+                                <div class="text">Capacity building program area emerging change-makers peaceful compelling strategize venture philanthropy</div>
+                            </div>
+                        </div>
+                        <a href="about.html" class="learn-more">LEARN MORE</a>
+                    </div>
+                </div>
+                
+                <!--Video Column-->
+                <div class="video-column col-md-6 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	
+                        <!--Video Box-->
+                        <div class="video-box">
+                            <figure class="image">
+                                <img src="images/resource/video-img.jpg" alt="">
+                            </figure>
+                            <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span class="flaticon-play-button-3"></span></a>
+                        </div>
+                    </div>
+                    <h2>See Our Video Profile's </h2>
+                    <div class="text">Move the needle communities living a fully ethical life change makers movements move the needle black lives matter social intrapreneurship citizen centered overcome</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End History Section-->
+    
+    <!--Counter Section-->
+    <section class="counter-section">
+    	<div class="auto-container">
+        	<div class="inner-container">
+            	
+                <div class="fact-counter">
+                    <div class="row clearfix">
+                    
+                        <!--Column-->
+                        <div class="column counter-column col-md-3 col-sm-6 col-xs-12">
+                            <div class="inner">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="1800">0</span>+
+                                </div>
+                                <h4 class="counter-title">TRUSTED CLIENTS</h4>
+                            </div>
+                        </div>
+                
+                        <!--Column-->
+                        <div class="column counter-column col-md-3 col-sm-6 col-xs-12">
+                            <div class="inner">
+                                <div class="count-outer count-box">
+                                    $<span class="count-text" data-speed="6000" data-stop="18000000">0</span>
+                                </div>
+                                <h4 class="counter-title">RECOVERED FOR OUR CLIENTS</h4>
+                            </div>
+                        </div>
+                
+                        <!--Column-->
+                        <div class="column counter-column col-md-3 col-sm-6 col-xs-12">
+                            <div class="inner">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="2200" data-stop="98">0</span>%
+                                </div>
+                                <h4 class="counter-title">SUCCESSFUL CASES</h4>
+                            </div>
+                        </div>
+                
+                        <!--Column-->
+                        <div class="column counter-column col-md-3 col-sm-6 col-xs-12">
+                            <div class="inner">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="2500" data-stop="10600">0</span>
+                                </div>
+                                <h4 class="counter-title">PERSONAL INJURY CASES</h4>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Counter Section-->
+    
+    <!--About Section-->
+    <section class="about-section">
+    	<div class="auto-container">
+        	<div class="clearfix">
+            	
+                <!--Image Column-->
+                <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                	<div class="image">
+                    	<img src="images/resource/about.jpg" alt="" />
+                    </div>
+                </div>
+                <!--Content Column-->
+                <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<h2>About <span class="theme_color">Supreme Law</span></h2>
+                        <div class="text">Since 1965, who loves or pursues or desires too obtains Attorneys of itself sed, will because it is pain, but because occasionally utcircumstances occurs ut in which toil and pain can procure him some great pleasure. </div>
+                        <div class="clearfix">
+                        	<div class="pull-left">
+                            	<h3>Get Free Consultation</h3>
+                                <div class="provide">“We can provide you with a free and <br> confidentioal evaluation”.</div>
+                            </div>
+                            <div class="pull-right">
+                            	<div class="charges">For criminal charges: </div>
+                                <div class="price">$ 26.256</div>
+                                <a href="#" class="theme-btn btn-style-two">Free Consultation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End About Section-->
+    
+    <!--Fluid Section One-->
+    <section class="fluid-section-one">
+    	<div class="outer-container clearfix">
+        	<!--Image Column-->
+            <div class="image-column" style="background-image:url(images/resource/image-1.jpg);">
+            	<figure class="image-box"><img src="images/resource/image-1.jpg" alt=""></figure>
+            </div>
+        	<!--Content Column-->
+            <div class="content-column">
+            	<div class="inner-column">
+                    <div class="sec-title light">
+                        <h2>Why <span class="theme_color">Select Us?</span></h2>
+                    </div>
+                    
+                    <!--Feature Block-->
+                    <div class="feature-block">
+                    	<div class="inner-block">
+                        	<div class="icon-box">
+                            	<span class="icon flaticon-balance"></span>
+                            </div>
+                            <h3>Fight For Justice</h3>
+                            <div class="text">Seeking justice in the world is a sed significant emotional and investment when we follow this call, we’re deeply.</div>
+                        </div>
+                    </div>
+                    
+                    <!--Feature Block-->
+                    <div class="feature-block">
+                    	<div class="inner-block">
+                        	<div class="icon-box">
+                            	<span class="icon flaticon-briefcase"></span>
+                            </div>
+                            <h3>Best Case Stratergy</h3>
+                            <div class="text">Proving liability in plaintiffs’ personal injury and complex civil litigation can be challenging and requires relent.</div>
+                        </div>
+                    </div>
+                    
+                    <!--Feature Block-->
+                    <div class="feature-block">
+                    	<div class="inner-block">
+                        	<div class="icon-box">
+                            	<span class="icon flaticon-user-2"></span>
+                            </div>
+                            <h3>Experienced Attorneys</h3>
+                            <div class="text">Lawyer Justice offers a broad range of opportunities for Speak Experienced attorneys to work you.</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Fluid Section One-->
+    
+    <!--Team Section-->
+    <section class="team-section">
+    	<div class="auto-container">
+        	<!--Sec Title-->
+            <div class="sec-title">
+            	<h2>Meet <span class="theme_color">Our Attorneys</span></h2>
+            </div>
+            <div class="four-item-carousel owl-carousel owl-theme">
+            	
+                <!--Team Block-->
+                <div class="team-block">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="images/resource/team-1.jpg" alt="" />
+                            <div class="overlay-box">
+                            	<div class="content">
+                                	<ul class="team-info">
+                                    	<li>97877-32-100</li>
+                                        <li>Jemstone@domain.com</li>
+                                    </ul>
+                                    <ul class="social-icon-one">
+                                        <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-box">
+                        	<h3><a href="#">David Vigo Michel</a></h3>
+                            <div class="designation">Family Lawyer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!--Team Block-->
+               	<div class="team-block">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="images/resource/team-2.jpg" alt="" />
+                            <div class="overlay-box">
+                            	<div class="content">
+                                	<ul class="team-info">
+                                    	<li>97877-32-100</li>
+                                        <li>Jemstone@domain.com</li>
+                                    </ul>
+                                    <ul class="social-icon-one">
+                                        <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-box">
+                        	<h3><a href="#">Mercy Van Desosa</a></h3>
+                            <div class="designation">Consumer Lawyer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Team Block-->
+                <div class="team-block">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="images/resource/team-3.jpg" alt="" />
+                            <div class="overlay-box">
+                            	<div class="content">
+                                	<ul class="team-info">
+                                    	<li>97877-32-100</li>
+                                        <li>Jemstone@domain.com</li>
+                                    </ul>
+                                    <ul class="social-icon-one">
+                                        <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-box">
+                        	<h3><a href="#">Jem Stone Lawrence</a></h3>
+                            <div class="designation">Criminal Lawyer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Team Block-->
+                <div class="team-block">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="images/resource/team-4.jpg" alt="" />
+                            <div class="overlay-box">
+                            	<div class="content">
+                                	<ul class="team-info">
+                                    	<li>97877-32-100</li>
+                                        <li>Jemstone@domain.com</li>
+                                    </ul>
+                                    <ul class="social-icon-one">
+                                        <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-box">
+                        	<h3><a href="#">Ashley Fletcher</a></h3>
+                            <div class="designation">Insurance Law</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Team Block-->
+                <div class="team-block">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="images/resource/team-1.jpg" alt="" />
+                            <div class="overlay-box">
+                            	<div class="content">
+                                	<ul class="team-info">
+                                    	<li>97877-32-100</li>
+                                        <li>Jemstone@domain.com</li>
+                                    </ul>
+                                    <ul class="social-icon-one">
+                                        <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-box">
+                        	<h3><a href="#">David Vigo Michel</a></h3>
+                            <div class="designation">Family Lawyer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!--Team Block-->
+               	<div class="team-block">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="images/resource/team-2.jpg" alt="" />
+                            <div class="overlay-box">
+                            	<div class="content">
+                                	<ul class="team-info">
+                                    	<li>97877-32-100</li>
+                                        <li>Jemstone@domain.com</li>
+                                    </ul>
+                                    <ul class="social-icon-one">
+                                        <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-box">
+                        	<h3><a href="#">Mercy Van Desosa</a></h3>
+                            <div class="designation">Consumer Lawyer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Team Block-->
+                <div class="team-block">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="images/resource/team-3.jpg" alt="" />
+                            <div class="overlay-box">
+                            	<div class="content">
+                                	<ul class="team-info">
+                                    	<li>97877-32-100</li>
+                                        <li>Jemstone@domain.com</li>
+                                    </ul>
+                                    <ul class="social-icon-one">
+                                        <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-box">
+                        	<h3><a href="#">Jem Stone Lawrence</a></h3>
+                            <div class="designation">Criminal Lawyer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Team Block-->
+                <div class="team-block">
+                	<div class="inner-box">
+                    	<div class="image">
+                        	<img src="images/resource/team-4.jpg" alt="" />
+                            <div class="overlay-box">
+                            	<div class="content">
+                                	<ul class="team-info">
+                                    	<li>97877-32-100</li>
+                                        <li>Jemstone@domain.com</li>
+                                    </ul>
+                                    <ul class="social-icon-one">
+                                        <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                                        <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-box">
+                        	<h3><a href="#">Ashley Fletcher</a></h3>
+                            <div class="designation">Insurance Law</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Team Section-->
+    
+    <!--Consulting Section-->
+    <section class="consulting-section" style="background-image:url(images/background/3.jpg)">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Form Column-->
+                <div class="form-column col-md-7 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<div class="sec-title">
+                        	<h2>Free <span class="theme_color">Consultation</span></h2>
+                        </div>
+                        
+                        <!-- Default Form -->
+                        <div class="default-form">
+                            <!--Call Back Form-->
+                            <form method="post" action="contact.html">
+                                <div class="row clearfix">
+                                
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="username" placeholder="Name" required>
+                                    </div>
+                
+                					<div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" name="phone" placeholder="Phone" required>
+                                    </div>
+                
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <input type="email" name="email" placeholder="Email" required>
+                                    </div>
+                                    
+                                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                        <select class="custom-select-box">
+                                            <option>Family Law</option>
+                                            <option>Business Law</option>
+                                            <option>Criminal Law</option>
+                                            <option>Insurance Law</option>
+                                            <option>Drug Control Law</option>
+                                            <option>Consumer Law</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    	<textarea name="message" placeholder="Massage"></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                        <button class="theme-btn submit-btn" type="submit" name="submit-form">Free Consultation</button>
+                                    </div>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!--Image Column-->
+                <div class="image-column col-md-5 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<div class="image">
+                        	<img src="images/resource/consulting.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Consulting Section-->
+    
+    <!--News Section-->
+    <section class="news-section">
+    	<div class="auto-container">
+        	<div class="sec-title">
+            	<h2>featured <span class="theme_color">News</span></h2>
+            </div>
+            <div class="row clearfix">
+            	
+                <!--News Block-->
+                <div class="news-block-three col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="blog-single.html"><img src="images/resource/blog-image-1.jpg" alt=""></a>
+                        </div>
+                        <div class="lower-box">
+                            <div class="post-info">18 Jan 2018</div>
+                            <h3><a href="blog-single.html">Can you be fined with $1600 for missing a license plate decal?</a></h3>
+                            <a href="blog-single.html" class="theme-btn read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--News Block-->
+                <div class="news-block-three col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="image">
+                            <a href="blog-single.html"><img src="images/resource/blog-image-2.jpg" alt=""></a>
+                        </div>
+                        <div class="lower-box">
+                            <div class="post-info">16 Jan 2018</div>
+                            <h3><a href="blog-single.html">2017 Texas Employment Law Update now easily for Free</a></h3>
+                            <a href="blog-single.html" class="theme-btn read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--News Block-->
+                <div class="news-block-three col-md-4 col-sm-6 col-xs-12">
+                	<div class="inner-box">
+                        <div class="image">
+                            <a href="blog-single.html"><img src="images/resource/blog-image-3.jpg" alt=""></a>
+                        </div>
+                        <div class="lower-box">
+                            <div class="post-info">14 Jan 2018</div>
+                            <h3><a href="blog-single.html">What the federal legal consequence of Florida's shooting will be?</a></h3>
+                            <a href="blog-single.html" class="theme-btn read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End News Section-->
+    
+    <!--Call To Action Section-->
+    <section class="call-to-action-section" style="background-image:url(images/background/4.jpg)">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Content Column-->
+                <div class="content-column col-md-9 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<h2>Are You Having Any Problems But Can’t Consult To Anyone? </h2>
+                        <div class="text">Talk to us! We promise we can help you! <span>Call Now! (1) 234-5678-910</span></div>
+                    </div>
+                </div>
+                
+                <!--Button Column-->
+                <div class="btn-column col-md-3 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<a href="#" class="theme-btn btn-style-three">Read More</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Call To Action Section-->
+    
+    <!--Main Footer-->
+    <footer class="main-footer" style="background-image:url(images/background/5.jpg)">
+		<div class="auto-container">
+        	<!--Widgets Section-->
+            <div class="widgets-section">
+            	<div class="row clearfix">
+					
+                    <!--Footer Column-->
+                    <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget logo-widget">
+                            <div class="logo">
+                                <a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
+                            </div>
+                            <div class="text">
+                            	<p>Since 1965, who loves or pursues seds or ut desires too obtains Attorneys of itself sed, will ut because it is pain, but because occasionally labor uts lawyer Supreme Law occurs.</p>
+                                <p>Supreme Law who loves or pursues seds or ut desires too obtains of itself sed, will ut because it is Lawyer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Footer Column-->
+                    <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget links-widget">
+                        	<h2>Usefull Links:</h2>
+                            <div class="row clearfix">
+                            	
+                                <div class="column col-md-6 col-sm-6 col-xs-12">
+                                	<ul class="list-style-one">
+                                    	<li><a href="#">Family Law</a></li>
+                                        <li><a href="#">Drug Law</a></li>
+                                        <li><a href="#">Insurance Law</a></li>
+                                        <li><a href="#">Accident Law</a></li>
+                                    </ul>
+                                </div>
+                                <div class="column col-md-6 col-sm-6 col-xs-12">
+                                	<ul class="list-style-one">
+                                    	<li><a href="#">Criminal Law</a></li>
+                                        <li><a href="#">Business Law</a></li>
+                                        <li><a href="#">Judicial Law</a></li>
+                                        <li><a href="#">Devorce Law</a></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            <h2>Follow Us:</h2>
+                            <ul class="social-icon-two">
+                                <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!--Footer Column-->
+                    <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget list-widget">
+                        	<h2>Contact info:</h2>
+                            <ul class="list-style-two">
+                            	<li><span class="icon fa fa-envelope"></span>info@domain.com</li>
+                                <li><span class="icon fa fa-phone"></span>+92 354 5386 24</li>
+                                <li><span class="icon fa fa-map-marker"></span>5648 VK 26th Lane - Florida 26154.</li>
+                                <li><span class="icon fa fa-clock-o"></span>Office Hours: 09.00am - 17.00pm</li>
+                            </ul>
+                            <h2>Newsletter:</h2>
+                            <div class="subscribe-form">
+                                <form method="post" action="contact.html">
+                                    <div class="form-group clearfix">
+                                        <input type="email" name="email" value="" placeholder="Enter Your Email Address" required>
+                                        <button type="submit" class="theme-btn subscribe-btn"><span class="flaticon-send-message-button"></span></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            
+            <!--Footer Bottom-->
+            <div class="footer-bottom">
+            	<div class="scroll-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+            	<div class="copyright">&copy; 2018 Eminent All rights reserved. by <a href="#">Yogsthemes</a></div>
+            </div>
+            
+        </div>
+    </footer>
+    <!--End Main Footer-->
+    
+</div>
+<!--End pagewrapper-->
+
+
+
+<script src="{% static 'js/jquery.js' %}"></script> 
+<!--Revolution Slider-->
+<script src="{% static 'plugins/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+<script src="{% static 'js/main-slider-script.js' %}"></script>
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/owl.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
