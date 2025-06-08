@@ -1,1 +1,1 @@
-web: gunicorn lex_fortis_abogados.wsgi.application
+web: gunicorn lex_fortis_abogados.wsgi
