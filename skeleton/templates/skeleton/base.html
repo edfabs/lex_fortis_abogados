@@ -13,7 +13,7 @@
 <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
 
 <!--Color Themes-->
-<link id="theme-color-file" href="css/color-themes/default-theme.css" rel="stylesheet">
+<link id="theme-color-file" href="{% static 'css/color-themes/default-theme.css' %}" rel="stylesheet">
 
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
@@ -315,7 +315,7 @@
                 <ul>
                 
                 	<li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{% static 'images/main-slider/image-1.jpg' %}" data-title="Slide Title" data-transition="parallaxvertical">
-                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/main-slider/image-1.jpg' %}"> 
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/temis.jpg' %}"> 
                     
                     <div class="tp-caption" 
                     data-paddingbottom="[0,0,0,0]"
@@ -396,7 +396,7 @@
                     </li>
                     
                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{% static 'images/main-slider/image-1-2.jpg' %}" data-title="Slide Title" data-transition="parallaxvertical">
-                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/main-slider/image-1-2.jpg' %}">
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/palacio_de_justicia.jpg' %}">
                     
                     <div class="tp-caption" 
                     data-paddingbottom="[0,0,0,0]"
@@ -476,7 +476,7 @@
                     
                     </li>
                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{% static 'images/main-slider/image-1-3.jpg' %}" data-title="Slide Title" data-transition="parallaxvertical">
-                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/main-slider/image-1-3.jpg' %}">
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/libros.jpg' %}">
                     
                     <div class="tp-caption" 
                     data-paddingbottom="[0,0,0,0]"
@@ -561,6 +561,10 @@
         </div>
     </section>
     <!--End Main Slider-->
+    <p style="font-size: 8px;">Foto de <a href="https://unsplash.com/es/@tingeyinjurylawfirm?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Tingey Injury Law Firm</a> en <a href="https://unsplash.com/es/fotos/mujer-sosteniendo-la-estatua-de-la-espada-durante-el-dia-DZpc4UY8ZtY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a>Foto de <a href="https://unsplash.com/es/@neonbrand?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Kenny Eliason</a> en <a href="https://unsplash.com/es/fotos/estatua-de-ceramica-verde-de-un-hombre-2RRq1BHPq4E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a>Foto de <a href="https://unsplash.com/es/@clarissemeyer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Clarisse Meyer</a> en <a href="https://unsplash.com/es/fotos/libros-en-estanteria-de-cristal-jKU2NneZAbI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a>
+      
+      
+      </p>
     <div id="content">
          {% block content %}{% endblock %}
    </div>
@@ -671,9 +675,10 @@
                         <!--Video Box-->
                         <div class="video-box">
                             <figure class="image">
-                                <img src="images/resource/video-img.jpg" alt="">
+                                <img src="{% static 'images/hombre_pensando.jpg' %}" alt="">
                             </figure>
                             <a href="https://youtu.be/pY2qMuptU6A?si=U3MsAT03c6WIv1fa" class="lightbox-image overlay-box"><span class="flaticon-play-button-3"></span></a>
+                            <p style="font-size: 8px;">Foto de <a href="https://unsplash.com/es/@neonbrand?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Kenny Eliason</a> en <a href="https://unsplash.com/es/fotos/estatua-de-ceramica-verde-de-un-hombre-2RRq1BHPq4E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a></p>
                         </div>
                     </div>
                     <h2>Conoce Nuestro Perfil en Video </h2>
@@ -697,9 +702,9 @@
                         <div class="column counter-column col-md-3 col-sm-6 col-xs-12">
                             <div class="inner">
                                 <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="3000" data-stop="1800">0</span>+
+                                    <span class="count-text" data-speed="3000" data-stop="600">0</span>+
                                 </div>
-                                <h4 class="counter-title">TRUSTED CLIENTS</h4>
+                                <h4 class="counter-title">verdaderos clientes</h4>
                             </div>
                         </div>
                 
@@ -707,9 +712,9 @@
                         <div class="column counter-column col-md-3 col-sm-6 col-xs-12">
                             <div class="inner">
                                 <div class="count-outer count-box">
-                                    $<span class="count-text" data-speed="6000" data-stop="18000000">0</span>
+                                    $<span class="count-text" data-speed="6000" data-stop="700000">0</span>
                                 </div>
-                                <h4 class="counter-title">RECOVERED FOR OUR CLIENTS</h4>
+                                <h4 class="counter-title">Justicia y Compensación Lograda</h4>
                             </div>
                         </div>
                 
@@ -719,7 +724,7 @@
                                 <div class="count-outer count-box">
                                     <span class="count-text" data-speed="2200" data-stop="98">0</span>%
                                 </div>
-                                <h4 class="counter-title">SUCCESSFUL CASES</h4>
+                                <h4 class="counter-title">Casos Exitosos</h4>
                             </div>
                         </div>
                 
@@ -727,9 +732,9 @@
                         <div class="column counter-column col-md-3 col-sm-6 col-xs-12">
                             <div class="inner">
                                 <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="2500" data-stop="10600">0</span>
+                                    <span class="count-text" data-speed="2500" data-stop="450">0</span>
                                 </div>
-                                <h4 class="counter-title">PERSONAL INJURY CASES</h4>
+                                <h4 class="counter-title">Casos Fiscales Resueltos</h4>
                             </div>
                         </div>
                         
@@ -749,23 +754,25 @@
                 <!--Image Column-->
                 <div class="image-column col-md-6 col-sm-12 col-xs-12">
                 	<div class="image">
-                    	<img src="images/resource/about.jpg" alt="" />
+                    	<img src="{% static 'images/suprema_corte_de_justicia.jpg' %}" alt="" />
                     </div>
+                    <p style="font-size: 8px;">Por Milton Martínez / Secretaría de Cultura de la Ciudad de México., <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0" target="_blank">CC BY 2.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=99396533" target="_blank">Enlace</a></p>
                 </div>
                 <!--Content Column-->
                 <div class="content-column col-md-6 col-sm-12 col-xs-12">
                 	<div class="inner-column">
-                    	<h2>About <span class="theme_color">Supreme Law</span></h2>
-                        <div class="text">Since 1965, who loves or pursues or desires too obtains Attorneys of itself sed, will because it is pain, but because occasionally utcircumstances occurs ut in which toil and pain can procure him some great pleasure. </div>
+                    	<h2>Sobre <span class="theme_color">Lex-Fortis Abogados</span></h2>
+                        <div class="text">En Lex-Fortis, contamos con décadas de experiencia brindando soluciones legales integrales y personalizadas. Nuestra firma nace con el compromiso de ofrecer representación ética, estratégica y cercana en diversas ramas del derecho. A lo largo de los años, hemos acompañado a nuestros clientes en momentos decisivos, defendiendo sus derechos y protegiendo sus intereses con firmeza y profesionalismo. </div>
                         <div class="clearfix">
                         	<div class="pull-left">
-                            	<h3>Get Free Consultation</h3>
-                                <div class="provide">“We can provide you with a free and <br> confidentioal evaluation”.</div>
+                            	<h3>Consulta Gratuita</h3>
+                                <div class="provide">“Podemos ofrecerte una evaluación legal gratuita y totalmente confidencial para ayudarte a tomar decisiones informadas desde el primer momento.”.</div>
                             </div>
                             <div class="pull-right">
-                            	<div class="charges">For criminal charges: </div>
-                                <div class="price">$ 26.256</div>
-                                <a href="#" class="theme-btn btn-style-two">Free Consultation</a>
+                                <br><br>
+                            	<!-- <div class="charges">For criminal charges: </div>
+                                <div class="price">$ 26.256</div> -->
+                                <a href="#" class="theme-btn btn-style-two">Consulta Gratuita</a>
                             </div>
                         </div>
                     </div>
@@ -780,14 +787,16 @@
     <section class="fluid-section-one">
     	<div class="outer-container clearfix">
         	<!--Image Column-->
-            <div class="image-column" style="background-image:url(images/resource/image-1.jpg);">
-            	<figure class="image-box"><img src="images/resource/image-1.jpg" alt=""></figure>
+            <div class="image-column" style="background-image:url('{% static 'images/buhos.jpg' %}');">
+            	<figure class="image-box"><img src="{% static 'images/buhos.jpg' %}" alt=""></figure>
+                <p style="font-size: 8px;">Foto de <a href="https://unsplash.com/es/@hynesight?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Jeremy Hynes</a> en <a href="https://unsplash.com/es/fotos/buho-marron-y-blanco-en-la-rama-marron-del-arbol-durante-el-dia-DOK1NgRJMdI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a>
+      </p>
             </div>
         	<!--Content Column-->
             <div class="content-column">
             	<div class="inner-column">
                     <div class="sec-title light">
-                        <h2>Why <span class="theme_color">Select Us?</span></h2>
+                        <h2>¿Por Qué <span class="theme_color">Elegirnos?</span></h2>
                     </div>
                     
                     <!--Feature Block-->
@@ -796,8 +805,8 @@
                         	<div class="icon-box">
                             	<span class="icon flaticon-balance"></span>
                             </div>
-                            <h3>Fight For Justice</h3>
-                            <div class="text">Seeking justice in the world is a sed significant emotional and investment when we follow this call, we’re deeply.</div>
+                            <h3>Luchamos por la Justicia</h3>
+                            <div class="text">Buscar justicia exige compromiso, preparación y convicción. En Lex-Fortis defendemos tus derechos con firmeza y acompañamos cada paso de tu proceso legal.</div>
                         </div>
                     </div>
                     
@@ -807,8 +816,8 @@
                         	<div class="icon-box">
                             	<span class="icon flaticon-briefcase"></span>
                             </div>
-                            <h3>Best Case Stratergy</h3>
-                            <div class="text">Proving liability in plaintiffs’ personal injury and complex civil litigation can be challenging and requires relent.</div>
+                            <h3>Estrategias Jurídicas Inteligentes</h3>
+                            <div class="text">Cada caso es distinto. Diseñamos estrategias legales personalizadas y eficaces, especialmente en litigios complejos y asuntos delicados.</div>
                         </div>
                     </div>
                     
@@ -818,8 +827,8 @@
                         	<div class="icon-box">
                             	<span class="icon flaticon-user-2"></span>
                             </div>
-                            <h3>Experienced Attorneys</h3>
-                            <div class="text">Lawyer Justice offers a broad range of opportunities for Speak Experienced attorneys to work you.</div>
+                            <h3>Equipo Legal con Experiencia</h3>
+                            <div class="text">Contamos con abogados experimentados en diversas ramas del derecho. Trabajamos con ética, conocimiento y enfoque en resultados.</div>
                         </div>
                     </div>
                     
@@ -829,12 +838,12 @@
     </section>
     <!--End Fluid Section One-->
     
-    <!--Team Section-->
+    <!-- Team Section-->
     <section class="team-section">
     	<div class="auto-container">
         	<!--Sec Title-->
             <div class="sec-title">
-            	<h2>Meet <span class="theme_color">Our Attorneys</span></h2>
+            	<h2>Nuestro <span class="theme_color">equipo legal</span></h2>
             </div>
             <div class="four-item-carousel owl-carousel owl-theme">
             	
@@ -842,7 +851,7 @@
                 <div class="team-block">
                 	<div class="inner-box">
                     	<div class="image">
-                        	<img src="images/resource/team-1.jpg" alt="" />
+                        	<img src="{% static 'images/resource/team-1.jpg' %}" alt="" />
                             <div class="overlay-box">
                             	<div class="content">
                                 	<ul class="team-info">
@@ -871,7 +880,7 @@
                	<div class="team-block">
                 	<div class="inner-box">
                     	<div class="image">
-                        	<img src="images/resource/team-2.jpg" alt="" />
+                        	<img src="{% static 'images/resource/team-2.jpg' %}" alt="" />
                             <div class="overlay-box">
                             	<div class="content">
                                 	<ul class="team-info">
@@ -899,7 +908,7 @@
                 <div class="team-block">
                 	<div class="inner-box">
                     	<div class="image">
-                        	<img src="images/resource/team-3.jpg" alt="" />
+                        	<img src="{% static 'images/resource/team-3.jpg' %}" alt="" />
                             <div class="overlay-box">
                             	<div class="content">
                                 	<ul class="team-info">
@@ -927,7 +936,7 @@
                 <div class="team-block">
                 	<div class="inner-box">
                     	<div class="image">
-                        	<img src="images/resource/team-4.jpg" alt="" />
+                        	<img src="{% static 'images/resource/team-4.jpg' %}" alt="" />
                             <div class="overlay-box">
                             	<div class="content">
                                 	<ul class="team-info">
@@ -955,7 +964,7 @@
                 <div class="team-block">
                 	<div class="inner-box">
                     	<div class="image">
-                        	<img src="images/resource/team-1.jpg" alt="" />
+                        	<img src="{% static 'images/resource/team-1.jpg' %}" alt="" />
                             <div class="overlay-box">
                             	<div class="content">
                                 	<ul class="team-info">
@@ -984,7 +993,7 @@
                	<div class="team-block">
                 	<div class="inner-box">
                     	<div class="image">
-                        	<img src="images/resource/team-2.jpg" alt="" />
+                        	<img src="{% static 'images/resource/team-2.jpg' %}" alt="" />
                             <div class="overlay-box">
                             	<div class="content">
                                 	<ul class="team-info">
@@ -1012,7 +1021,7 @@
                 <div class="team-block">
                 	<div class="inner-box">
                     	<div class="image">
-                        	<img src="images/resource/team-3.jpg" alt="" />
+                        	<img src="{% static 'images/resource/team-3.jpg' %}" alt="" />
                             <div class="overlay-box">
                             	<div class="content">
                                 	<ul class="team-info">
@@ -1040,7 +1049,7 @@
                 <div class="team-block">
                 	<div class="inner-box">
                     	<div class="image">
-                        	<img src="images/resource/team-4.jpg" alt="" />
+                        	<img src="{% static 'images/resource/team-4.jpg' %}" alt="" />
                             <div class="overlay-box">
                             	<div class="content">
                                 	<ul class="team-info">
@@ -1067,10 +1076,10 @@
             </div>
         </div>
     </section>
-    <!--End Team Section-->
+    <!--End Team Section -->
     
     <!--Consulting Section-->
-    <section class="consulting-section" style="background-image:url(images/background/3.jpg)">
+    <section class="consulting-section" style="background-image:url({% static 'images/background/3.jpg' %})">
     	<div class="auto-container">
         	<div class="row clearfix">
             	
@@ -1078,7 +1087,7 @@
                 <div class="form-column col-md-7 col-sm-12 col-xs-12">
                 	<div class="inner-column">
                     	<div class="sec-title">
-                        	<h2>Free <span class="theme_color">Consultation</span></h2>
+                        	<h2>Consulta <span class="theme_color">Gratuita</span></h2>
                         </div>
                         
                         <!-- Default Form -->
@@ -1088,11 +1097,11 @@
                                 <div class="row clearfix">
                                 
                                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" name="username" placeholder="Name" required>
+                                        <input type="text" name="username" placeholder="Nombre" required>
                                     </div>
                 
                 					<div class="form-group col-md-6 col-sm-6 col-xs-12">
-                                        <input type="text" name="phone" placeholder="Phone" required>
+                                        <input type="text" name="phone" placeholder="Teléfono" required>
                                     </div>
                 
                                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
@@ -1101,21 +1110,19 @@
                                     
                                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                         <select class="custom-select-box">
-                                            <option>Family Law</option>
-                                            <option>Business Law</option>
-                                            <option>Criminal Law</option>
-                                            <option>Insurance Law</option>
-                                            <option>Drug Control Law</option>
-                                            <option>Consumer Law</option>
+                                            <option>Derecho fiscal-administrativo</option>
+                                            <option>Derecho civil-mercantil y familiar</option>
+                                            <option>Derecho Penal</option>
+                                            <option>Amparo</option>
                                         </select>
                                     </div>
                                     
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                    	<textarea name="message" placeholder="Massage"></textarea>
+                                    	<textarea name="message" placeholder="Mensaje"></textarea>
                                     </div>
                                     
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                                        <button class="theme-btn submit-btn" type="submit" name="submit-form">Free Consultation</button>
+                                        <button class="theme-btn submit-btn" type="submit" name="submit-form">Consulta Gratuita</button>
                                     </div>
                                     
                                 </div>
@@ -1128,7 +1135,8 @@
                 <div class="image-column col-md-5 col-sm-12 col-xs-12">
                 	<div class="inner-column">
                     	<div class="image">
-                        	<img src="images/resource/consulting.png" alt="" />
+                        	<img src="{% static 'images/contacto.jpg' %}" alt="" />
+                            <p style="font-size: 8px;">Foto de <a href="https://unsplash.com/es/@tfrants?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Tyler Franta</a> en <a href="https://unsplash.com/es/fotos/persona-usando-computadora-portatil-en-mesa-de-madera-blanca-iusJ25iYu1c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a></p>
                         </div>
                     </div>
                 </div>
@@ -1142,7 +1150,7 @@
     <section class="news-section">
     	<div class="auto-container">
         	<div class="sec-title">
-            	<h2>featured <span class="theme_color">News</span></h2>
+            	<h2>Noticias <span class="theme_color">Destacadas</span></h2>
             </div>
             <div class="row clearfix">
             	
@@ -1150,12 +1158,12 @@
                 <div class="news-block-three col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
                         <div class="image">
-                            <a href="blog-single.html"><img src="images/resource/blog-image-1.jpg" alt=""></a>
+                            <a href="blog-single.html"><img src="{% static 'images/resource/blog-image-1.jpg' %}" alt=""></a>
                         </div>
                         <div class="lower-box">
-                            <div class="post-info">18 Jan 2018</div>
-                            <h3><a href="blog-single.html">Can you be fined with $1600 for missing a license plate decal?</a></h3>
-                            <a href="blog-single.html" class="theme-btn read-more">Read More</a>
+                            <div class="post-info">18 Enero 2018</div>
+                            <h3><a href="blog-single.html">¿Pueden multarte con $1600 por no tener el engomado de placas?</a></h3>
+                            <a href="blog-single.html" class="theme-btn read-more">Leer más</a>
                         </div>
                     </div>
                 </div>
@@ -1164,12 +1172,12 @@
                 <div class="news-block-three col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
                         <div class="image">
-                            <a href="blog-single.html"><img src="images/resource/blog-image-2.jpg" alt=""></a>
+                            <a href="blog-single.html"><img src="{% static 'images/resource/blog-image-2.jpg' %}" alt=""></a>
                         </div>
                         <div class="lower-box">
-                            <div class="post-info">16 Jan 2018</div>
-                            <h3><a href="blog-single.html">2017 Texas Employment Law Update now easily for Free</a></h3>
-                            <a href="blog-single.html" class="theme-btn read-more">Read More</a>
+                            <div class="post-info">16 Enero 2018</div>
+                            <h3><a href="blog-single.html">Consulta la Actualización 2025 de la Ley Laboral de CDMX — Disponible Gratis</a></h3>
+                            <a href="blog-single.html" class="theme-btn read-more">Leer Más</a>
                         </div>
                     </div>
                 </div>
@@ -1178,12 +1186,12 @@
                 <div class="news-block-three col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box">
                         <div class="image">
-                            <a href="blog-single.html"><img src="images/resource/blog-image-3.jpg" alt=""></a>
+                            <a href="blog-single.html"><img src="{% static 'images/resource/blog-image-3.jpg' %}" alt=""></a>
                         </div>
                         <div class="lower-box">
-                            <div class="post-info">14 Jan 2018</div>
-                            <h3><a href="blog-single.html">What the federal legal consequence of Florida's shooting will be?</a></h3>
-                            <a href="blog-single.html" class="theme-btn read-more">Read More</a>
+                            <div class="post-info">14 Enero 2018</div>
+                            <h3><a href="blog-single.html">¿Tienes problemas con tu contrato de arrendamiento?</a></h3>
+                            <a href="blog-single.html" class="theme-btn read-more">Leer Más</a>
                         </div>
                     </div>
                 </div>
@@ -1201,15 +1209,15 @@
                 <!--Content Column-->
                 <div class="content-column col-md-9 col-sm-12 col-xs-12">
                 	<div class="inner-column">
-                    	<h2>Are You Having Any Problems But Can’t Consult To Anyone? </h2>
-                        <div class="text">Talk to us! We promise we can help you! <span>Call Now! (1) 234-5678-910</span></div>
+                    	<h2>¿Tienes algún problema legal pero no sabes con quién hablar? </h2>
+                        <div class="text">¡Habla con nosotros! Podemos ayudarte. <span>¡Llama ahora! (1) 234-5678-910</span></div>
                     </div>
                 </div>
                 
                 <!--Button Column-->
                 <div class="btn-column col-md-3 col-sm-12 col-xs-12">
                 	<div class="inner-column">
-                    	<a href="#" class="theme-btn btn-style-three">Read More</a>
+                    	<a href="#" class="theme-btn btn-style-three">Leer más </a>
                     </div>
                 </div>
                 
@@ -1229,11 +1237,11 @@
                     <div class="footer-column col-md-4 col-sm-6 col-xs-12">
                         <div class="footer-widget logo-widget">
                             <div class="logo">
-                                <a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
+                                <a href="index.html"><img class="" width="200" src="{% static 'images/Lex Fortis Abogados-bhuo.png' %}" alt="Lex Fortis Abogados Logo" title="Lex Fortis Abogados Logo"></a>
                             </div>
                             <div class="text">
-                            	<p>Since 1965, who loves or pursues seds or ut desires too obtains Attorneys of itself sed, will ut because it is pain, but because occasionally labor uts lawyer Supreme Law occurs.</p>
-                                <p>Supreme Law who loves or pursues seds or ut desires too obtains of itself sed, will ut because it is Lawyer.</p>
+                            	<p>Desde 1965, hemos acompañado a quienes buscan justicia.</p>
+                                <p>Sabemos que acudir a un abogado no siempre es fácil, pero en muchos casos, es el primer paso para recuperar la tranquilidad. En Lex-Fortis, trabajamos con compromiso y experiencia para brindarte soluciones legales reales.</p>
                             </div>
                         </div>
                     </div>
@@ -1241,28 +1249,27 @@
                     <!--Footer Column-->
                     <div class="footer-column col-md-4 col-sm-6 col-xs-12">
                         <div class="footer-widget links-widget">
-                        	<h2>Usefull Links:</h2>
+                        	<h2>Enlaces útiles:</h2>
                             <div class="row clearfix">
                             	
                                 <div class="column col-md-6 col-sm-6 col-xs-12">
                                 	<ul class="list-style-one">
-                                    	<li><a href="#">Family Law</a></li>
-                                        <li><a href="#">Drug Law</a></li>
-                                        <li><a href="#">Insurance Law</a></li>
-                                        <li><a href="#">Accident Law</a></li>
+                                    	<li><a href="#">Derecho fiscal-administrativo</a></li>
+                                        <li><a href="#">Derecho civil-mercantil y familiar</a></li>
+                                        <li><a href="#">Derecho penal</a></li>
+                                        <li><a href="#">Amparo</a></li>
                                     </ul>
                                 </div>
                                 <div class="column col-md-6 col-sm-6 col-xs-12">
                                 	<ul class="list-style-one">
-                                    	<li><a href="#">Criminal Law</a></li>
-                                        <li><a href="#">Business Law</a></li>
-                                        <li><a href="#">Judicial Law</a></li>
-                                        <li><a href="#">Devorce Law</a></li>
+                                    	<li><a href="#">Derecho Familiar</a></li>
+                                        <li><a href="#">Derecho Judicial</a></li>
+                                        <li><a href="#">Derecho fiscal</a></li>
                                     </ul>
                                 </div>
                                 
                             </div>
-                            <h2>Follow Us:</h2>
+                            <h2>Sigenos:</h2>
                             <ul class="social-icon-two">
                                 <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
                                 <li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -1276,18 +1283,18 @@
                     <!--Footer Column-->
                     <div class="footer-column col-md-4 col-sm-6 col-xs-12">
                         <div class="footer-widget list-widget">
-                        	<h2>Contact info:</h2>
+                        	<h2>Informaciòn de contacto:</h2>
                             <ul class="list-style-two">
-                            	<li><span class="icon fa fa-envelope"></span>info@domain.com</li>
+                            	<li><span class="icon fa fa-envelope"></span>jfgonzalez@lex-fortis-abogados.com</li>
                                 <li><span class="icon fa fa-phone"></span>+92 354 5386 24</li>
-                                <li><span class="icon fa fa-map-marker"></span>5648 VK 26th Lane - Florida 26154.</li>
+                                <li><span class="icon fa fa-map-marker"></span>Porvenir 21, Centro de Azcapotzalco, Azcapotzalco, 02000 CDMX.</li>
                                 <li><span class="icon fa fa-clock-o"></span>Office Hours: 09.00am - 17.00pm</li>
                             </ul>
-                            <h2>Newsletter:</h2>
+                            <h2>Suscríbete a nuestro boletín legal:</h2>
                             <div class="subscribe-form">
                                 <form method="post" action="contact.html">
                                     <div class="form-group clearfix">
-                                        <input type="email" name="email" value="" placeholder="Enter Your Email Address" required>
+                                        <input type="email" name="email" value="" placeholder="Ingresa tu correo electronico" required>
                                         <button type="submit" class="theme-btn subscribe-btn"><span class="flaticon-send-message-button"></span></button>
                                     </div>
                                 </form>
@@ -1301,7 +1308,7 @@
             <!--Footer Bottom-->
             <div class="footer-bottom">
             	<div class="scroll-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
-            	<div class="copyright">&copy; 2018 Eminent All rights reserved. by <a href="#">Yogsthemes</a></div>
+            	<div class="copyright">&copy; 2025 edfabs todos los derechos reservados. por <a href="#">edfabs</a></div>
             </div>
             
         </div>
