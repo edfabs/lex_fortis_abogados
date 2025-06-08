@@ -1,0 +1,1 @@
+web: gunicorn lex_fortis_abogados.wsgi
